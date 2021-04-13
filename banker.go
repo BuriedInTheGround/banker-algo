@@ -137,8 +137,8 @@ func safeState(run int) (bool, error) {
 	}
 
 	var (
-		isSufficient = false
-		need         = make([]int, nOfResources)
+		isSufficient bool
+		need         []int
 		done         = make([]bool, nOfProcesses)
 		doneCounter  = 0
 		failCounter  = 0
